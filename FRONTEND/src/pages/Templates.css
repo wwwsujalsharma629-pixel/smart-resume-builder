@@ -1,0 +1,95 @@
+.templates-page {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar - SAME THEME as Resume Builder */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #002a72, #004bff);
+  color: white;
+  padding: 30px 18px;
+}
+
+.sidebar .logo {
+  font-size: 26px;
+  margin-bottom: 32px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  font-size: 18px;
+  margin: 18px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul .active {
+  background: linear-gradient(90deg, #0066ff, #8b43ff);
+}
+
+/* Logout */
+.logout {
+  margin-top: 40px;
+  width: 100%;
+  padding: 12px;
+  background: #ff4d8f;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Main section */
+.templates-main {
+  flex: 1;
+  padding: 40px;
+  background: #f4f6ff;
+}
+
+.templates-main h1 {
+  margin-bottom: 6px;
+}
+
+.templates-main p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Template Cards */
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.template-card {
+  width: 240px;
+  height: 180px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.template-card:hover {
+  transform: translateY(-5px);
+}
+
+.template-card .icon {
+  font-size: 44px;
+  margin-bottom: 10px;
+}

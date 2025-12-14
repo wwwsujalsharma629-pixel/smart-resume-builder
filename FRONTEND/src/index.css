@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Theme */
+:root {
+  --brand-gradient: linear-gradient(90deg, #6a5af9, #b14cff);
+  --brand-blue: #5b6cff;
+  --brand-purple: #9b4dff;
+  --brand-pink: #ff4d97;
+}
+
+/* Global Page Background */
+body {
+  background: #f8faff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Gradient Button */
+.gradient-btn {
+  background: var(--brand-gradient);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+.gradient-btn:hover {
+  opacity: 0.85;
+}
+
+/* Outline Button */
+.outline-btn {
+  border: 2px solid var(--brand-blue);
+  padding: 12px 22px;
+  border-radius: 8px;
+  color: var(--brand-blue);
+  background: white;
+  font-weight: 500;
+  transition: 0.25s;
+}
+.outline-btn:hover {
+  background: var(--brand-blue);
+  color: white;
+}
+
+/* Card UI */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Sidebar Gradient */
+.sidebar-gradient {
+  background: linear-gradient(180deg, #0a0f3b, #101b5f);
+}
+
+/* Page Title */
+.page-title {
+  font-size: 36px;
+  font-weight: 700;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

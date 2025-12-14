@@ -1,0 +1,94 @@
+/* Full Page Background Gradient */
+.auth-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0066ff, #8b43ff);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.auth-box {
+  width: 420px;
+  background: #ffffff;
+  padding: 38px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0px 10px 28px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title */
+.auth-box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Sub-text */
+.auth-box p {
+  font-size: 15px;
+  margin-bottom: 22px;
+  color: #444;
+}
+
+/* Inputs */
+.auth-box input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #c9c9c9;
+  background: #f7f7f7;
+  transition: 0.2s;
+}
+
+.auth-box input:focus {
+  border-color: #7c57ff;
+  box-shadow: 0 0 0 3px rgba(124, 87, 255, 0.2);
+  outline: none;
+}
+
+/* Gradient Button */
+.auth-box button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #0066ff, #8b43ff);
+  color: white;
+  transition: 0.2s;
+}
+
+.auth-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Bottom Link */
+.auth-box a {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #6a3cff;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}

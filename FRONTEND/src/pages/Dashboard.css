@@ -1,0 +1,148 @@
+.dash-wrapper {
+  display: flex;
+  height: 100vh;
+  background: #f9faff;
+  overflow: hidden;
+}
+
+/* SIDEBAR */
+.dash-sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #1c1f4a, #000022);
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  color: #fff;
+}
+
+.dash-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4a6cf7;
+}
+
+.dash-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.dash-menu li {
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.dash-menu li:hover,
+.dash-menu .active {
+  background: linear-gradient(90deg, #4a6cf7, #9b5cf0);
+  color: #fff;
+}
+
+.logout-btn {
+  margin-top: auto;
+  background: #ff4d6d;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.logout-btn:hover {
+  opacity: 0.85;
+}
+
+/* MAIN SECTION */
+.dash-main {
+  flex: 1;
+  padding: 50px;
+  overflow-y: auto;
+}
+
+.dash-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.dash-sub {
+  font-size: 16px;
+  color: #5f6368;
+  margin-bottom: 30px;
+}
+
+/* CARDS GRID */
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.dash-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  transition: 0.25s;
+}
+.dash-card:hover {
+  transform: translateY(-4px);
+}
+
+/* BUTTON */
+.create-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(90deg, #4a6cf7, #9b5cf0);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: 0.25s;
+}
+.create-btn:hover {
+  opacity: 0.85;
+}
+
+.dash-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a6cf7;
+  cursor: pointer;
+}
+
+.dash-actions span:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 830px) {
+  .dash-wrapper {
+    flex-direction: column;
+  }
+  .dash-sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+  }
+  .logout-btn {
+    display: none;
+  }
+}

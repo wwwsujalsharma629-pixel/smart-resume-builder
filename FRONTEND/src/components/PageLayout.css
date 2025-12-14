@@ -1,0 +1,19 @@
+.page-wrapper {
+  padding: 60px 90px;
+}
+.page-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.page-sub {
+  font-size: 18px;
+  color: #4c4c4c;
+  margin-bottom: 35px;
+}
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
